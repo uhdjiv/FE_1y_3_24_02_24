@@ -24,8 +24,12 @@
                     <li class="nav-li">Контакти</li>
                 </ul>
                 <ul class="info">
-                    <li class="info-li"><a class="info-li-a" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="info-li"><a class="info-li-a" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="info-li"><svg class="svg-envelope">
+                        <use href="/img/symbol-defs.svg#icon-envelope"></use>
+                    </svg><a class="info-li-a" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="info-li"><svg class="svg-smartphone">
+                        <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                    </svg><a class="info-li-a" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +38,7 @@
             <section class="section-1">
                 <div class="conteiner center">
                 <h1 class="h1-section1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО БІЗНЕСУ</h1>
-                <button class="button-section1">Замовити послугу</button>
+                <button class="button-section1" data-modal-open>Замовити послугу</button>
             </div>
             </section>
             <section class="section-2">
@@ -65,7 +69,7 @@
                 <ul class="ul-section3">
                     <li class="li-section3"><img class="img-section3" src="./img/1s.png" alt=""></li>
                     <li class="li-section3"><img class="img-section3" src="./img/s2.png" alt=""></li>
-                    <li class="li-section3"><img class="img-section3" src="./img/s3.png" alt=""></img>
+                    <li class="li-section3"><img class="img-section3" src="./img/s3.png" alt=""></li>
                 </ul>
             </div>
             </section>
@@ -110,5 +114,11 @@
      </ul>
     </div>
      </footer>
+     <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+<button class="close-button" data-modal-close>X</button>
+        </div>
+     </div>
+     <script src="./script.js"></script>
 </body>
 </html>
