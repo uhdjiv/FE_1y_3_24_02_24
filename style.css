@@ -117,23 +117,26 @@ justify-content: center; */
   text-align: center;
 }
 .section-2 {
-  height: 130px;
+  padding-top:94px;
+  padding-bottom: 94px;
 }
 .ul-section2 {
   display: flex;
-  margin: 10px;
-  margin-top: 100px;
+  margin-right: 10px;
 }
 .b-li-section2 {
   font-family: Roboto;
   font-weight: Bold;
   font-size: 14px;
+  margin-right: 10px;
 }
 .p-li-section2 {
   font-family: Roboto;
   font-weight: Regular;
   font-size: 14px;
+  margin-top: 10px;
   color: #757575;
+  margin-right: 10px;
 }
 .section3 {
   height: 440px;
@@ -288,4 +291,50 @@ fill: #2196F3;
 }
 .close-button{
   background-color: red;
+}
+.svg-antenna{
+  width: 70px;
+  height: 70px;
+  display: flex;
+
+}
+.svg-clock{
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+.svg-diagram{
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+.svg-astronaut{
+  width: 70px;
+  height: 70px;
+  display: flex;
+}
+.li-section2::before{
+content:"" ;
+width: 270px;
+height: 120px;
+background-color:#F5F4FA ;
+display: block;
+background-repeat: no-repeat;
+background-position: center;
+margin-bottom: 30px;
+}
+.li-section2:not(:last-child){
+  margin-right: 30px;
+}
+.li-svg-1::before{
+background-image: url(./img/antenna\ 1.svg);
+}
+.li-svg-2::before{
+  background-image: url(./img/clock\ 1.svg);
+}
+.li-svg-3::before{
+  background-image: url(./img/diagram\ 1.svg);
+}
+.li-svg-4::before{
+  background-image: url(./img/astronaut\ 1.svg);
 }
