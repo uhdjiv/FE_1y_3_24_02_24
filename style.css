@@ -69,6 +69,10 @@ a {
   display: flex;
   align-items: center;
 }
+.info-li:hover{
+  fill: #2196F3;
+  color: #2196F3;
+}
 .info-li-a {
   color: #757575;
 }
