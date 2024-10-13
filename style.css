@@ -187,6 +187,10 @@ justify-content: center; */
   width: 270px;
   height: 260px;
 }
+/* .mukola:hover{
+  transform: scale(1000,1);
+  transition: 10s;
+} */
 .p-name-section4 {
   font-family: Roboto;
   font-weight: Medium;
@@ -209,20 +213,32 @@ justify-content: center; */
 .svg-ul{
 display: flex;
 justify-content: space-evenly;
-fill: #AFB1B8;
 margin-bottom: 42px;
+/*
+list-style:none ;
+*/
 }
 .li-svg-s4{
-    width: 44px;
+    /* width: 44px;
   height: 44px;
   border-radius: 50%;
+  */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  width: 44px;
+  height: 44px;
+  
 }
 .li-svg-s4:hover{
   background-color: #2196F3;
-  fill: #ffffff;
+  border-radius: 50%;
+}
+.li-svg-s4:hover .svg-all{
+fill: #FFFFFF;
+}
+.svg-all{
+  fill: #AFB1B8;
 }
 .svg-instagram:hover{
 
@@ -252,6 +268,41 @@ margin-bottom: 42px;
   width: 20px;
   height: 20px;
 }
+.svg-all-2{
+  fill: #FFFFFF;
+}
+.a-svg-s4{
+text-decoration: none;
+padding: 12px;
+padding-top: 15px;
+}
+.svg-ul-2{
+  display: flex;
+}
+.li-svg-s4-2{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 44px;
+  height: 44px;
+  background-color: #3d454c;
+  border-radius: 50%;
+}
+.li-svg-s4-2:hover .svg-all-2{
+fill: #FFFFFF;
+}
+.a-svg-s4-2{
+  text-decoration: none;
+padding: 12px;
+padding-top: 15px;
+}
+.li-svg-s4-2:hover{
+  background-color: #2196F3;
+  border-radius: 50%;
+}
+.li-svg-s4-2:not(:last-child){
+  margin-right: 10px;
+}
 .logo2 {
   font-family: Raleway;
   font-weight: bold;
@@ -280,7 +331,7 @@ margin-bottom: 42px;
   color: #ffffff99;
 }
 .address-li-a:hover {
-  color: #2196f3;
+  color: #FFFFFF;
   cursor: pointer;
 }
 .mail {
@@ -323,13 +374,15 @@ fill: #2196F3;
   left:0 ;
   bottom:0 ;
   right: 0;
-  background-color: rgb(70, 138, 138);
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
+
+
 }
 .modal{
   width:500px ;
   height: 500px;
-  background-color: red;
+  background-color: #FFFFFF;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -340,7 +393,13 @@ fill: #2196F3;
   pointer-events: none;
 }
 .close-button{
-  background-color: red;
+  background-color: #FFFFFF;
+  /* width:40px  ;
+  height:40px  ; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
 }
 .svg-antenna{
   width: 70px;
@@ -493,4 +552,26 @@ padding-top: 63px;
 padding-left: 24px;
 padding-right: 24px;
 padding-bottom: 63px;
+transition-property:all ;
+transition-duration:700ms;
 }
+.div-foot{
+display: flex;
+
+}
+.div-foot-x2{
+  margin-right: 70px;
+}
+.h2-foot-svg{
+  /* приєднуйтесь */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+padding-bottom: 20px;
+}
+
